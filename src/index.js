@@ -1,6 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 
-console.log('%c HI', 'color: firebrick');
+
 const li = document.getElementsByTagName('li');
 console.log(li);
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
@@ -10,12 +10,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   .then(resp => resp.json())
   .then(resp => addImgElems(resp));
 })
-
-// document.addEventListener('DOMContentLoaded',()=>{
-//   fetch(breedUrl)
-//   .then(resp => resp.json())
-//   .then(resp => addBreeds(resp));
-// })
 
 function addBreeds(obj){
   const breedsContainer = document.getElementById('dog-breeds');
