@@ -5,9 +5,9 @@ const li = document.getElementsByTagName('li');
 const imageUrl = "https://dog.ceo/api/breeds/image/random/4";
 const breedUrl = 'https://dog.ceo/api/breeds/list/all';
 document.addEventListener('DOMContentLoaded',()=>{
-  fetch(imgUrl)
-  .then(resp => resp.json())
-  .then(resp => addImgElems(resp));
+  fetch(imageUrl)
+  .then(response => response.json())
+  .then(json => addImgElems(json));
 })
 
 function addBreeds(obj){
