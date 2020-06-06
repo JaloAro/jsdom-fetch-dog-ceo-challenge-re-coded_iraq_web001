@@ -2,8 +2,7 @@ console.log('%c HI', 'color: firebrick')
 
 
 const li = document.getElementsByTagName('li');
-console.log(li);
-const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
+const imageUrl = "https://dog.ceo/api/breeds/image/random/4";
 const breedUrl = 'https://dog.ceo/api/breeds/list/all';
 document.addEventListener('DOMContentLoaded',()=>{
   fetch(imgUrl)
