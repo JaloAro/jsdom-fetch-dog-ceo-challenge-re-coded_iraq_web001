@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded',()=>{
   .then(resp => addImgElems(resp));
 })
 
-document.addEventListener('DOMContentLoaded',()=>{
-  fetch(breedUrl)
-  .then(resp => resp.json())
-  .then(resp => addBreeds(resp));
-})
+// document.addEventListener('DOMContentLoaded',()=>{
+//   fetch(breedUrl)
+//   .then(resp => resp.json())
+//   .then(resp => addBreeds(resp));
+// })
 
 function addBreeds(obj){
   const breedsContainer = document.getElementById('dog-breeds');
